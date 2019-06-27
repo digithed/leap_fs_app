@@ -24,10 +24,10 @@ export default class List extends React.Component {
 
 		this.setState({user_id: id})
 		
-		let job_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${job}&api-key=1o1dPOxTOylCSW1C9XO1SKlbAP4MMILk`
-		let hobby_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${hobby}&api-key=1o1dPOxTOylCSW1C9XO1SKlbAP4MMILk`
-		let company_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${company}&api-key=1o1dPOxTOylCSW1C9XO1SKlbAP4MMILk`
-		let both_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${job}+${hobby}&api-key=1o1dPOxTOylCSW1C9XO1SKlbAP4MMILk`
+		let job_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${job}&api-key=null`
+		let hobby_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${hobby}&api-key=null`
+		let company_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${company}&api-key=null`
+		let both_link = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${job}+${hobby}&api-key=null`
 		
 		if(this.state.api_data == undefined && a==1) superagent.get(job_link)
 		.end((err, res) => {
