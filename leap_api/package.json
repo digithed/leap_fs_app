@@ -6,7 +6,7 @@
     "bootstrap": "^4.3.1",
     "circular-json": "^0.5.9",
     "mongodb": "^3.2.7",
-    "mongoose": "^5.6.1",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
